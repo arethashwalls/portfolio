@@ -44,3 +44,18 @@ nav li img {
     width: auto;
     padding-left: 25px;
 }
+
+/* Main Text Styles *******************************************************************/
+main {
+ width: 60%;
+ margin: 0 auto;
+}
+.text-box {
+    width: 70%;
+    display: inline-block;
+}
+
+/* Image Styles ***********************************************************************/
+.image-box {
+    float: right;
+}

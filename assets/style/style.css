@@ -1,0 +1,46 @@
+/* Global Styles ************************************************************************/
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif; 
+    color: #463A34;
+    background-color: #CAFFD0;
+}
+@font-face {
+    font-family: 'Frente';
+    src: url('webfonts/FrenteH1-Regular-webfont.eot');
+    src: url('webfonts/FrenteH1-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/FrenteH1-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Header Styles ***********************************************************************/
+header {
+    background: #FF4400;
+    padding: 20px 0 30px 0;
+}
+.header-box {
+    width: 950px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.title-box {
+    display: inline-block;
+}
+h1 {
+    font-family: 'Frente';
+    font-size: 6em;
+    color: #CAFFD0;
+    text-shadow: 2px 2px 2px #463A34;
+}
+nav {
+    float: right;
+}
+nav li {
+    display: inline-block;
+    
+}
+nav li img {
+    height: 64px;
+    width: auto;
+    padding-left: 25px;
+}

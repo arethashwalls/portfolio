@@ -1,7 +1,10 @@
 /* Global Styles ************************************************************************/
+html, body {
+    width: 100%;
+}
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif; 
-    color: #463A34;
+    color:#463A34;
     background-color: #CAFFD0;
 }
 @font-face {
@@ -12,16 +15,21 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+a {
+    text-decoration: none;
+}
 
 /* Header Styles ***********************************************************************/
 header {
     background: #FF4400;
     padding: 20px 0;
     margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .header-box {
     width: 950px;
-    max-width: 60%;
     margin: 0 auto;
 }
 .title-box {
@@ -35,6 +43,11 @@ h1 {
     color: #CAFFD0;
     text-shadow: 2px 2px 2px #463A34;
 }
+h2 {
+    font-variant: small-caps;
+    font-size: 1.5em;
+    text-align: center;
+}
 nav {
     float: right;
 }
@@ -43,19 +56,22 @@ nav li {
     
 }
 nav li img {
-    height: 64px;
+    height: 48px;
     width: auto;
     padding-left: 25px;
 }
 
 /* Main Text Styles *******************************************************************/
 main {
- width: 60%;
- margin: 0 auto;
+    padding-top: 220px;
+    width: 60%;
+    margin: 0 auto;
 }
 .text-box {
-    width: 70%;
-    display: inline-block;
+    width: 100%;
+}
+.text-box h2 {
+    margin: 20px 0;
 }
 .your-text {
     background: #463A34;
@@ -66,17 +82,53 @@ main {
     border-radius: 5px;
     margin-bottom: 25px;
 }
-.my-text {
+.my-text, .portfolio-box {
     background: #F5FFFF;
+    padding: 7px 10px;
+    border: 3px solid #463A34;
+    border-radius: 5px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
 }
-
+.my-text::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.screenshot {
+    float: left;
+    margin: 0 20px 20px 20px;
+    max-width: 100%;
+}
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-box {
+    width: 500px;
+}
 
 /* Image Styles ***********************************************************************/
 .image-box {
     float: right;
 }
+/* Responsive Styles ******************************************************************/
+@media only screen and (max-width: 1300px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .header-box, main {
+        width: 80%;
+    }
+    nav li {
+        display: block;
+    }
+}
+
 
 /* Utility Styles *********************************************************************/
 .hidden {
-    display: none;
+    display: none!important;
 }

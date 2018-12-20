@@ -46,7 +46,6 @@ h1 {
 h2 {
     font-variant: small-caps;
     font-size: 1.5em;
-    text-align: center;
 }
 nav {
     float: right;
@@ -71,7 +70,7 @@ main {
     width: 100%;
 }
 .text-box h2 {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 .your-text {
     background: #463A34;
@@ -104,6 +103,9 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+#portfolio h2 {
+    text-align: center;
+}
 .portfolio-box {
     width: 500px;
 }
@@ -126,7 +128,6 @@ main {
         display: block;
     }
 }
-
 
 /* Utility Styles *********************************************************************/
 .hidden {

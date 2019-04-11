@@ -27,6 +27,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0 4px 2px -2px #463A34;
 }
 .header-box {
     width: 950px;
@@ -47,17 +48,16 @@ h2 {
     font-variant: small-caps;
     font-size: 1.5em;
 }
-nav {
+header nav {
     float: right;
 }
-nav li {
-    display: inline-block;
-    
-}
-nav li img {
+header nav li img {
     height: 48px;
     width: auto;
     padding-left: 25px;
+}
+header nav li:first-child {
+    margin-bottom: 1rem;
 }
 
 /* Main Text Styles *******************************************************************/
@@ -119,13 +119,27 @@ main {
     h1 {
         font-size: 3em;
     }
+    header nav li {
+        display: inline-block;
+    }
+    header nav li:first-child {
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width: 900px) {
     .header-box, main {
         width: 80%;
     }
-    nav li {
+}
+@media only screen and (max-width: 620px) {
+    header nav {
+        float: none;
+        text-align: center;
+    }
+    .title-box {
         display: block;
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
 

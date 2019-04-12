@@ -21,7 +21,7 @@ body.has-navbar-fixed-top {
 .navbar {
     padding: 1rem 2rem;
     background: #FF4400;
-    box-shadow: 0 2px 4px -2px #463A34
+    box-shadow: 0 2px 4px -2px #463A34;
 }
 .navbar h1 {
     font-family: Frente;
@@ -73,11 +73,13 @@ body.has-navbar-fixed-top {
 	border-width: 11px;
 	margin-top: -11px;
 }
-.questions li a, .answer {
+.questions li a, .answer, .reply {
     border-radius: 5px;
 }
-.questions li a {
+.questions li a, .reply {
     padding: 10px 13px;
+}
+.questions li a {
     color: #EAFFEC;
     background-color: #463A34;
 }
@@ -87,12 +89,20 @@ body.has-navbar-fixed-top {
 }
 
 /* Answer Styles ***********************************************************************/
-.answer {
-	position: relative;
+.reply {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+}
+.answer, .reply {
     background-color: #EAFFEC;
     border: 2px solid #463A34;
+}
+.answer {
+	position: relative;
+    
     padding: 15px 18px;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 2px 4px -2px #463A34;
 }
 .answer p:not(:last-child), .answer ul li:not(:last-child) {
     margin-bottom: 1rem;

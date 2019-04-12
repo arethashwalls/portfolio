@@ -73,7 +73,7 @@ body.has-navbar-fixed-top {
 	border-width: 11px;
 	margin-top: -11px;
 }
-.questions li a, .answer, .reply {
+.questions li a, .answer, .reply, .card {
     border-radius: 5px;
 }
 .questions li a, .reply {

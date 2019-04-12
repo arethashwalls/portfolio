@@ -70,7 +70,7 @@ main {
     margin: 0 auto;
 }
 .question-nav {
-    position: fixed;
+    float: left;
 }
 .question-nav li {
     position: relative;
@@ -112,12 +112,15 @@ main {
 
 /* Answer Styles ***********************************************************************/
 .answer-box {
-    width: 75%;
+    height: auto;
+    width: 60%;
     float: right;
-    margin-bottom: 4rem;
+    margin: 4rem 0;
 }
 .answer {
 	position: relative;
+}
+.answer, .showcase {
     background-color: #EAFFEC;
     border: 2px solid #463A34;
     padding: 15px 18px;
@@ -157,9 +160,6 @@ main {
 #skills {
     width: 70%;
 }
-#contact, #portfolio {
-    margin-top: 4rem;
-}
 #contact:after, #contact:before, #portfolio:after, #portfolio:before {
     top: 50%;
 }
@@ -172,10 +172,11 @@ main {
     margin-top: -12px;
 }
 
-/* Image Styles ***********************************************************************/
-.image-box {
-    float: right;
-}
+/* Showcase Styles *********************************************************************/
+.showcase img {
+    float: left;
+} 
+
 /* Responsive Styles ******************************************************************/
 @media only screen and (max-width: 1600px) {
     .header-box {
@@ -216,4 +217,9 @@ main {
 /* Utility Styles *********************************************************************/
 .hidden {
     display: none!important;
+}
+.clearfix:after {
+    display: block;
+    content: ' ';
+    clear: both;
 }

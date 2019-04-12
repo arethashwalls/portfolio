@@ -1,0 +1,143 @@
+/* Global Styles ************************************************************************/
+@font-face {
+    font-family: 'Frente';
+    src: url('webfonts/FrenteH1-Regular-webfont.eot');
+    src: url('webfonts/FrenteH1-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/FrenteH1-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif; 
+    color:#463A34;
+    background-color: #CAFFD0;
+    font-size: 16px;
+}
+
+/* Header Styles ***********************************************************************/
+body.has-navbar-fixed-top {
+    padding-top: 7rem;
+}
+.navbar {
+    padding: 1rem 2rem;
+    background: #FF4400;
+    box-shadow: 0 2px 4px -2px #463A34
+}
+.navbar h1 {
+    font-family: Frente;
+    font-size: 4em;
+    color: #CAFFD0;
+    text-shadow: 2px 2px 2px #463A34;
+}
+.navbar, .navbar-end, .navbar-menu, .navbar-start {
+    display: flex;
+    align-items: stretch;
+}
+.navbar-brand {
+    display: block;
+}
+.navbar-menu {
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-shadow: none;
+    background: none;
+}
+.navbar-end {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+/* Question Nav Styles *******************************************************************/
+.questions li {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+.questions li:before, .questions li:after {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.questions li:after {
+	border-right-color: #463A34;
+	border-width: 5px;
+	margin-top: -5px;
+}
+.questions li:before {
+	border-right-color: #463A34;
+	border-width: 11px;
+	margin-top: -11px;
+}
+.questions li a, .answer {
+    border-radius: 5px;
+}
+.questions li a {
+    padding: 10px 13px;
+    color: #EAFFEC;
+    background-color: #463A34;
+}
+.questions li a.active {
+    color: #ff6f3a;
+    font-size: 2rem;
+}
+
+/* Answer Styles ***********************************************************************/
+.answer {
+	position: relative;
+    background-color: #EAFFEC;
+    border: 2px solid #463A34;
+    padding: 15px 18px;
+    margin-top: 2rem;
+}
+.answer p:not(:last-child), .answer ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.answer p {
+    line-height: 1.3rem;
+}
+.answer:after, .answer:before {
+	left: 100%;
+	top: 20%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.answer:after {
+	border-left-color: #EAFFEC;
+	border-width: 30px;
+	margin-top: -30px;
+}
+.answer:before {
+	border-left-color: #463A34;
+	border-width: 33px;
+	margin-top: -33px;
+}
+.answer ul {
+    margin-left: 2rem;
+    list-style: square;
+}
+#contact:after, #contact:before, #portfolio:after, #portfolio:before {
+    top: 50%;
+}
+#contact:after, #portfolio:after {
+    border-width: 10px;
+    margin-top: -10px;
+}
+#contact:before, #portfolio:before {
+    border-width: 12px;
+    margin-top: -12px;
+}
+
+/* Portfolio styles ***********************************************************************/
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+}

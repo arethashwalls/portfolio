@@ -11,7 +11,7 @@ html, body {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif; 
     color:#463A34;
     background-color: #CAFFD0;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* Header Styles ***********************************************************************/
@@ -93,16 +93,15 @@ body.has-navbar-fixed-top {
     font-family: 'Courier New', Courier, monospace;
     display: inline;
 }
-.answer, .reply {
+.answer, .reply, .card {
     background-color: #EAFFEC;
     border: 2px solid #463A34;
+    box-shadow: 0 2px 4px -2px #463A34;
 }
 .answer {
 	position: relative;
-    
     padding: 15px 18px;
     margin-top: 3rem;
-    box-shadow: 0 2px 4px -2px #463A34;
 }
 .answer p:not(:last-child), .answer ul li:not(:last-child) {
     margin-bottom: 1rem;
@@ -150,4 +149,12 @@ body.has-navbar-fixed-top {
 .columns {
     display: flex;
     flex-wrap: wrap;
+}
+.card a {
+    margin: 0 auto;
+}
+.card-header-title {
+    font-family: Frente;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #463A34;
 }

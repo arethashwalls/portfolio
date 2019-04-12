@@ -9,65 +9,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style/custom.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/style/style.css" /> -->
 </head>
 
-<body>
+<body class="has-navbar-fixed-top">
     <header>
-        <div class="header-box">
-            <div class="title-box">
-                <h1>Aretha S.H. Walls</h1>
-                <h2>Full-Stack Web Developer</h2>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <h1 class="title">Aretha S.H. Walls</h1>
+                <h2 class="subtitle">Full-Stack Web Developer</h2>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="https://github.com/arethashwalls" target="_blank"><img src="assets/images/github.svg"
-                                alt="My GitHub Profile" /></a></li>
-                    <li><a href="https://www.linkedin.com/in/aretha-s-walls/" target="_blank"></a><img src="assets/images/linkedin.png"
-                            alt="My LinkedIn Profile" /></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <nav class="question-nav">
-            <ul>
-                <li><a href="#" class="active">What do you do?</a></li>
-                <li><a href="index.html">Who are you?</a></li>
-                <li><a href="contact.html">How can we get in touch?</a></li>
-                <li><a href="portfolio.html">What have you made?</a></li>
-            </ul>
+            <div class="navbar-menu is-active">
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a href="https://github.com/arethashwalls" target="_blank"><img src="assets/images/github.svg"
+                                alt="My GitHub Profile" /></a>
+                    </div>
+                    <div class="navbar-item">
+                        <a href="https://www.linkedin.com/in/aretha-s-walls/" target="_blank"><img src="assets/images/linkedin.png"
+                                alt="My LinkedIn Profile" /></a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <section class="answer-box" id="skills">
-            <div class="answer">
-                <p>I’m a full-stack web developer. My bootcamp curriculum focused on the MERN (Mongo, Express, React, Node) stack, but I’ve had the chance to explore alternate technologies both within and outside of my classes. I pride myself on my ability to learn and adapt to new technologies quickly.</p>
-                <p>Technologies that I’ve worked with include:</p>
-                <ul>
-                    <li>
-                        <strong>Databases:</strong> 
-                        <a href="https://www.mongodb.com/" target="_blank">MongoDB,</a> with and without <a href="https://mongoosejs.com/" target="_blank">Mongoose</a>, and
-                        <a href="https://www.mysql.com/" target="_blank">MySQL</a>, with and without <a href="http://docs.sequelizejs.com/" target="_blank">Sequelize</a>.
-                    </li>
-                    <li>
-                        <strong>Languages:</strong> 
-                        Primarily JavaScript, but I've also worked with Java, Ruby, and Python in the past.
-                    </li>
-                    <li>
-                        <strong>JavaScript libraries:</strong> 
-                        <a href="https://reactjs.org/" target="_blank">React</a>, <a href="https://redux.js.org/" target="_blank">Redux</a>, <a href="http://www.passportjs.org/" target="_blank">Passport</a>, <a href="https://github.com/axios/axios" target="_blank">Axios</a>, <a href="https://momentjs.com/" target="_blank">Moment</a>, <a href="https://jquery.com/" target="_blank">JQuery</a>, <a href="https://github.com/cheeriojs/cheerio#readme" target="_blank">Cheerio</a>, and others.
-                    </li>
-                    <li>
-                        <strong>CSS libraries:</strong> 
-                        <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="https://materializecss.com/" target="_blank">Materialize</a>, and <a href="https://bulma.io/" target="_blank">Bulma</a>.
-                    </li>
-                    <li>
-                        <strong>Concepts:</strong> 
-                        CRUD (Create, Read, Update, Delete) applications, RESTful (Representational State Transfer) APIs, MVC (Model, View, Controller) architecture.
-                    </li>
-                </ul>
+    </header>
+    <main class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-5">
+                    <nav class="questions">
+                        <ul>
+                            <li><a href="index.html">Who are you?</a></li>
+                            <li><a href="#" class="active">What do you do?</a></li>
+                            <li><a href="contact.html">How can we get in touch?</a></li>
+                            <li><a href="portfolio.html">What have you made?</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <section class="column is-7">
+                    <div class="answer" id="portfolio">
+                        <p>I’m a full-stack web developer. My bootcamp curriculum focused on the MERN (Mongo, Express,
+                            React, Node) stack, but I’ve had the chance to explore alternate technologies both within
+                            and outside of my classes. I pride myself on my ability to learn and adapt to new
+                            technologies quickly.</p>
+                        <p>Technologies that I’ve worked with include:</p>
+                        <ul>
+                            <li>
+                                <strong>Databases:</strong>
+                                <a href="https://www.mongodb.com/" target="_blank">MongoDB,</a> with and without <a
+                                    href="https://mongoosejs.com/" target="_blank">Mongoose</a>, and
+                                <a href="https://www.mysql.com/" target="_blank">MySQL</a>, with and without <a href="http://docs.sequelizejs.com/"
+                                    target="_blank">Sequelize</a>.
+                            </li>
+                            <li>
+                                <strong>Languages:</strong>
+                                Primarily JavaScript, but I've also worked with Java, Ruby, and Python in the past.
+                            </li>
+                            <li>
+                                <strong>JavaScript libraries:</strong>
+                                <a href="https://reactjs.org/" target="_blank">React</a>, <a href="https://redux.js.org/"
+                                    target="_blank">Redux</a>, <a href="http://www.passportjs.org/" target="_blank">Passport</a>,
+                                <a href="https://github.com/axios/axios" target="_blank">Axios</a>, <a href="https://momentjs.com/"
+                                    target="_blank">Moment</a>, <a href="https://jquery.com/" target="_blank">JQuery</a>,
+                                <a href="https://github.com/cheeriojs/cheerio#readme" target="_blank">Cheerio</a>, and
+                                others.
+                            </li>
+                            <li>
+                                <strong>CSS libraries:</strong>
+                                <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>, <a href="https://materializecss.com/"
+                                    target="_blank">Materialize</a>, and <a href="https://bulma.io/" target="_blank">Bulma</a>.
+                            </li>
+                            <li>
+                                <strong>Concepts:</strong>
+                                CRUD (Create, Read, Update, Delete) applications, RESTful (Representational State
+                                Transfer) APIs, MVC (Model, View, Controller) architecture.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
 </body>
 

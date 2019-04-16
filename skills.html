@@ -37,18 +37,31 @@
     </header>
     <main class="section">
         <div class="container">
+            <div class="level is-hidden-tablet">
+                <nav class="mobile-questions tabs is-toggle is-toggle-rounded is-centered">
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li class="is-active"><a href="#">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="columns">
-                <div class="column is-5">
-                    <nav class="questions">
+                <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                    <div class="mobile-question is-hidden-tablet">
+                        <p>What can you do?</p>
+                    </div>
+                    <nav class="questions is-hidden-mobile">
                         <ul>
                             <li><a href="index.html">Who are you?</a></li>
-                            <li><a href="#" class="active">What do you do?</a></li>
+                            <li><a href="#" class="active">What can you do?</a></li>
                             <li><a href="contact.html">How can we get in touch?</a></li>
                             <li><a href="portfolio.html">What have you made?</a></li>
                         </ul>
                     </nav>
                 </div>
-                <section class="column is-7">
+                <section class="column is-8-desktop is-6-tablet is-12-mobile">
                     <img src="assets/images/elipsis.gif" class="elipsis" />
                     <p class="is-pulled-right reply">Aretha replied...</p>
                     <br />

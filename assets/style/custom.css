@@ -47,13 +47,21 @@ body.has-navbar-fixed-top {
     margin-left: auto;
 }
 
+/* Mobile Question Nav Styles ************************************************************/
+.mobile-questions.tabs.is-toggle li.is-active a {
+    border-color: #463A34;
+}
+.mobile-question p {
+    display: inline-block;
+}
+
 /* Question Nav Styles *******************************************************************/
-.questions li {
+.questions li, .mobile-question {
     position: relative;
     display: block;
     margin-bottom: 30px;
 }
-.questions li:before, .questions li:after {
+.questions li:before, .questions li:after, .mobile-question:before, .mobile-question:after {
 	right: 100%;
 	top: 50%;
 	border: solid transparent;
@@ -63,27 +71,27 @@ body.has-navbar-fixed-top {
 	position: absolute;
 	pointer-events: none;
 }
-.questions li:after {
+.questions li:after, .mobile-question:after {
 	border-right-color: #463A34;
 	border-width: 5px;
 	margin-top: -5px;
 }
-.questions li:before {
+.questions li:before, .mobile-question:before, {
 	border-right-color: #463A34;
 	border-width: 11px;
 	margin-top: -11px;
 }
-.questions li a, .answer, .reply, .card {
+.questions li a, .answer, .reply, .card, .mobile-question p {
     border-radius: 5px;
 }
-.questions li a, .reply {
+.questions li a, .reply, .mobile-question p {
     padding: 10px 13px;
 }
-.questions li a {
+.questions li a, .reply, .mobile-questions.tabs.is-toggle li.is-active a, .mobile-question p {
     color: #EAFFEC;
     background-color: #463A34;
 }
-.questions li a.active {
+.questions li a.active, .mobile-question p {
     color: #ff6f3a;
     font-size: 2rem;
 }
@@ -92,14 +100,18 @@ body.has-navbar-fixed-top {
 .elipsis {
     display: block;
     width: 2rem;
+    margin-left: auto;
+    margin-bottom: 1rem;
 }
 .reply {
     font-family: 'Courier New', Courier, monospace;
     display: inline;
 }
-.answer, .reply, .card {
+.answer, .card, .mobile-questions.tabs.is-toggle a {
     background-color: #EAFFEC;
     border: 2px solid #463A34;
+}
+.answer, .card {
     box-shadow: 0 2px 4px -2px #463A34;
 }
 .answer {

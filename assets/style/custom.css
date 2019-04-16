@@ -13,7 +13,18 @@ html, body {
     background-color: #CAFFD0;
     font-size: 18px;
 }
-
+hr {
+    background-color: #463A34;
+}
+.button {
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.button:visited, button:active, button:focus, .button:focus:not(:active) {
+    color: #CAFFD0;
+}
 /* Header Styles ***********************************************************************/
 body.has-navbar-fixed-top {
     padding-top: 7rem;
@@ -87,7 +98,7 @@ body.has-navbar-fixed-top {
 .questions li a, .reply, .mobile-question p {
     padding: 10px 13px;
 }
-.questions li a, .reply, .mobile-questions.tabs.is-toggle li.is-active a, .mobile-question p {
+.questions li a, .reply, .mobile-questions.tabs.is-toggle li.is-active a, .mobile-question p, .button {
     color: #EAFFEC;
     background-color: #463A34;
 }
@@ -173,4 +184,23 @@ body.has-navbar-fixed-top {
     font-family: Frente;
     font-size: 2rem;
     text-shadow: 1px 1px 1px #463A34;
+}
+.overlay-box {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+    font-size: 1.25rem;
+}
+.overlay-box:hover .card-content, .overlay-box:focus .card-content, .overlay-box:active .card-content {
+    display: block;
+    background: rgba(0, 0, 0, .8);
 }

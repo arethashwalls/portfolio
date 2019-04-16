@@ -9,14 +9,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/bulma.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style/custom.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/style/style.css" /> -->
 </head>
 
-<body class="">
+<body class="has-navbar-fixed-top">
     <header>
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <h1 class="title">Aretha S.H. Walls</h1>
                 <h2 class="subtitle">Full-Stack Web Developer</h2>
@@ -35,6 +36,7 @@
             </div>
         </nav>
     </header>
+    <a id="top"></a>
     <main class="section">
         <div class="container">
             <div class="level is-hidden-tablet">
@@ -66,12 +68,17 @@
                     <p class="is-pulled-right reply">Aretha replied...</p>
                     <br />
                     <div class="answer" id="portfolio">
-                        <p>Here are some of my favorite projects. To check out more, see my <a href="https://github.com/arethashwalls"
-                                target="_blank">GitHub portfolio</a>.</p>
+                        <p class="is-hidden-touch">Here are some of my favorite projects. Hover over each image to read
+                            a description of the project. Click the project's title to view a live demonstration.</p>
+                        <p class="is-hidden-desktop">Here are some of my favorite projects. Tap each image to read a
+                            description of the project. Tap the project's title to view a live demonstration.</p>
+                        <p>To check out more, see my <a href="https://github.com/arethashwalls" target="_blank">GitHub
+                                portfolio</a>.</p>
                     </div>
                 </section>
             </div>
         </div>
+        <hr />
         <section class="container">
             <div class="columns">
                 <div class="column is-4">
@@ -81,16 +88,19 @@
                                 <h4 class="card-header-title is-centered">A Quest!</h4>
                             </a>
                         </header>
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <a href="https://bootcamp-quest-app.herokuapp.com/" target="_blank"><img src="assets/images/a-quest.png"
-                                        alt="A Quest screenshot." /></a>
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p>A Quest is a full-stack MERN productivity and planning app with a classic RPG theme
-                                    that allows users to create flowcharts representing quests.</p>
+                        <div class="overlay-box">
+                            <div class="card-image">
+                                <figure class="image is-1by1">
+                                    <a href="https://bootcamp-quest-app.herokuapp.com/" target="_blank"><img src="assets/images/a-quest.png"
+                                            alt="A Quest screenshot." /></a>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>A Quest is a full-stack MERN productivity and planning app with a classic RPG
+                                        theme
+                                        that allows users to create flowcharts representing quests.</p>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -102,16 +112,18 @@
                                 <h4 class="card-header-title is-centered">GamePath</h4>
                             </a>
                         </header>
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <a href="https://arethashwalls.github.io/GamePath/" target="_blank"><img src="assets/images/gamepath.png"
-                                        alt="Gamepath screenshot." /></a>
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p>Created with three classmates, the GamePath app provides video game and music
-                                    recommendations based on inputed moods.</p>
+                        <div class="overlay-box">
+                            <div class="card-image">
+                                <figure class="image is-1by1">
+                                    <a href="https://arethashwalls.github.io/GamePath/" target="_blank"><img src="assets/images/gamepath.png"
+                                            alt="Gamepath screenshot." /></a>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Created with three classmates, the GamePath app provides video game and music
+                                        recommendations based on inputed moods.</p>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -123,17 +135,19 @@
                                 <h4 class="card-header-title ">Tucson FoodScraper</h4>
                             </a>
                         </header>
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <a href="https://thawing-bayou-57256.herokuapp.com/" target="_blank"><img src="assets/images/tucson-foodscraper.png"
-                                        alt="Tucson FoodScraper screenshot." /></a>
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p>Tucson FoodScraper is a full-stack web-scraping application that parses Tucson
-                                    Foodie Magazine's RSS feed, saves the results in a Mongo database, and displays
-                                    them. Users can comment on articles and delete their comments.</p>
+                        <div class="overlay-box">
+                            <div class="card-image">
+                                <figure class="image is-1by1">
+                                    <a href="https://thawing-bayou-57256.herokuapp.com/" target="_blank"><img src="assets/images/tucson-foodscraper.png"
+                                            alt="Tucson FoodScraper screenshot." /></a>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Tucson FoodScraper is a full-stack web-scraping application that parses Tucson
+                                        Foodie Magazine's RSS feed, saves the results in a Mongo database, and displays
+                                        them. Users can comment on articles and delete their comments.</p>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -145,17 +159,19 @@
                                 <h4 class="card-header-title is-centered">Giflicious!</h4>
                             </a>
                         </header>
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <a href="https://arethashwalls.github.io/GifLicious/" target="_blank"><img src="assets/images/giflicious.png"
-                                        alt="Giflicious screenshot." /></a>
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p>Giflicious is an application that fetches and displaying GIFs from the GIPHY API
-                                    with
-                                    JQuery and saves chosen GIFs in local storage.</p>
+                        <div class="overlay-box">
+                            <div class="card-image">
+                                <figure class="image is-1by1">
+                                    <a href="https://arethashwalls.github.io/GifLicious/" target="_blank"><img src="assets/images/giflicious.png"
+                                            alt="Giflicious screenshot." /></a>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Giflicious is an application that fetches and displaying GIFs from the GIPHY API
+                                        with
+                                        JQuery and saves chosen GIFs in local storage.</p>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -167,17 +183,20 @@
                                 <h4 class="card-header-title is-centered">Not So Different</h4>
                             </a>
                         </header>
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <a href="https://radiant-stream-15157.herokuapp.com/" target="_blank"><img src="assets/images/not-so-different.png"
-                                        alt="Not So Different screenshot." /></a>
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p>Not So Different is a full-stack mock-dating-site with a villainous theme that
-                                    provides users with ten Likert-style questions then determines then returns their
-                                    closest match.</p>
+                        <div class="overlay-box">
+                            <div class="card-image">
+                                <figure class="image is-1by1">
+                                    <a href="https://radiant-stream-15157.herokuapp.com/" target="_blank"><img src="assets/images/not-so-different.png"
+                                            alt="Not So Different screenshot." /></a>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Not So Different is a full-stack mock-dating-site with a villainous theme that
+                                        provides users with ten Likert-style questions then determines then returns
+                                        their
+                                        closest match.</p>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -189,16 +208,18 @@
                                 <h4 class="card-header-title is-centered">It Just Clicks</h4>
                             </a>
                         </header>
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <a href="https://arethashwalls.github.io/ItJustClicks/" target="_blank"><img src="assets/images/it-just-clicks.png"
-                                        alt="It Just Clicks screenshot." /></a>
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="content">
-                                <p>A click-based memory game built with React, featuring a few popular programming
-                                    languages.</p>
+                        <div class="overlay-box">
+                            <div class="card-image">
+                                <figure class="image is-1by1">
+                                    <a href="https://arethashwalls.github.io/ItJustClicks/" target="_blank"><img src="assets/images/it-just-clicks.png"
+                                            alt="It Just Clicks screenshot." /></a>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>A click-based memory game built with React, featuring a few popular programming
+                                        languages.</p>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -206,6 +227,7 @@
             </div>
         </section>
     </main>
+    <a href="#top" class="button"><i class="fas fa-angle-double-up"></i></a>
 </body>
 
 </html>

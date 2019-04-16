@@ -89,6 +89,10 @@ body.has-navbar-fixed-top {
 }
 
 /* Answer Styles ***********************************************************************/
+.elipsis {
+    display: block;
+    width: 2rem;
+}
 .reply {
     font-family: 'Courier New', Courier, monospace;
     display: inline;
